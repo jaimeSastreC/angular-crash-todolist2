@@ -1,0 +1,21 @@
+.header {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.header a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.title {
+  margin-right: 30px;
+}
+
+.clear {
+  clear: both;
+}

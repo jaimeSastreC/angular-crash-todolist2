@@ -19,14 +19,18 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
             "aot": false,
+
             "assets": [
               "src/favicon.ico",
               "src/assets"
             ],
+
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+
+            "scripts": [],
+
           },
           "configurations": {
             "production": {

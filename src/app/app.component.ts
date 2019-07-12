@@ -1,10 +1,33 @@
+// package from Angular core
 import { Component } from '@angular/core';
 
+// decrator with meta data for components
+
 @Component({
+  // selector: will be used in HTML page, loaded; with generator CLI adds it for us
   selector: 'app-root',
+  // template to check and develop
   templateUrl: './app.component.html',
+  // component style
   styleUrls: ['./app.component.css']
 })
+// {{title}} dynamic content in template, in single element like div
+// check app.component.html for template
 export class AppComponent {
-  title = 'angular-crash-todolist';
+/*  // exemple de Typescript; attributs
+  name: string = 'mon Projet';
+  title: string = 'angular-crash-todolist';
+  content: string = ' à compléter';
+  author: string = 'auteur';
+
+  // methods:
+  constructor() {
+    console.log(1);
+    this.content = 'Ceci est un site test';
+    this.changeName('Jaime Sastre');
+  }
+
+  changeName(name: string): void {
+    this.author = name;
+  }*/
 }

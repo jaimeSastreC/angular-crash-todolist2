@@ -1,0 +1,9 @@
+<!-- setClass checks css to .is-complete activate if true/false -->
+<div [ngClass]="setClasses()">
+  <p>
+    <!-- adding event to checkbox with (change) onToggle and (click) => got to todo-item.component.ts-->
+    <input (change) = "onToggle(todo)" type="checkbox"/>
+    {{todo.title}}
+    <button (click)= " onDelete(todo)" class="del">x</button>
+  </p>
+</div>
