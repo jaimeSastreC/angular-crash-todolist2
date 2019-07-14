@@ -10,7 +10,7 @@ import {Todo} from 'src/app/models/Todo';
 export class TodoItemComponent implements OnInit {
   // input property
   @Input() todo: Todo;
-  @Output() deleteTodo: EventEmitter<Todo> = new EventEmitter();
+  @Output() deleteTodo: EventEmitter <Todo> = new EventEmitter();
 
   constructor(private todoService: TodoService) { }
 
@@ -22,7 +22,7 @@ export class TodoItemComponent implements OnInit {
     let classes = {
       todo: true,
       'is-complete': this.todo.completed
-    }
+    };
     return classes;
   }
 
@@ -36,7 +36,7 @@ export class TodoItemComponent implements OnInit {
     this.todoService.toggleCompleted(todo).subscribe(todo => console.log(todo));
   }
   // onDelete event captures delete click => action
-  //need to access todo in the UI
+  // need to access todo in the UI
   onDelete(todo) {
     // console.log('delete');
     // emet commande => Output

@@ -5,13 +5,13 @@
 -->
 
 <!-- adds add-todo html -->
-<app-add-todo (addTodo)="addTodo($event)"></app-add-todo>
+<app-add-todo (addTodo) ="addTodo($event)"></app-add-todo>
 <!-- see todo-item.component.ts add Input  // delete is catched here and send deleteTodo method in todos.component.ts-->
-<app-todo-item
-  *ngFor="let todo of todos"
-  [todo]= "todo"
-  (deleteTodo)= "deleteTodo($event)"
->
+    <app-todo-item
+      *ngFor="let todo of todos"
+      [todo]= "todo"
+      (deleteTodo)= "deleteTodo($event)"
+    >
 
 </app-todo-item>
 

@@ -2,8 +2,17 @@
 <div [ngClass]="setClasses()">
   <p>
     <!-- adding event to checkbox with (change) onToggle and (click) => got to todo-item.component.ts-->
-    <input (change) = "onToggle(todo)" type="checkbox"/>
-    {{todo.title}}
+    <input
+      (change) = "onToggle(todo)"
+      type="checkbox"
+      id = {{todo.id}}
+      [checked]="todo.completed"
+    />
+
+        <label for="{{todo.id}}">
+          {{todo.title}}
+        </label>
+
     <button (click)= " onDelete(todo)" class="del">x</button>
   </p>
 </div>

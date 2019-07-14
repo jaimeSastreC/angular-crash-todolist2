@@ -61,7 +61,7 @@
     "no-redundant-jsdoc": true,
     "no-switch-case-fall-through": true,
     "no-use-before-declare": true,
-    "no-var-requires": false,
+    "no-var-requires": true,
     //    "todo": check this
     //"no-shadowed-variable": true,
     "object-literal-key-quotes": [

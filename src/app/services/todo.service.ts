@@ -7,20 +7,21 @@ import { Todo } from '../models/Todo';
 
 const httpOptions = {
   headers: new HttpHeaders({
-    'Content-Type': 'application/jon'
+    'Content-Type': 'application/json'
   })
-}
+};
+
 
 @Injectable({
   providedIn: 'root'
 })
+
 export class TodoService {
   // add to constructor Http
   // make a getrequest to Json placeholder => URL as a property to this service / class
   // todosUrl:string = 'https://jsonplaceholder.typicode.com/todos?_limit=7';
-  todosUrl:string = 'https://jsonplaceholder.typicode.com/todos';
+  todosUrl = 'https://jsonplaceholder.typicode.com/todos';
   todosLimit = '?_limit=7';
-
 
 
   constructor(private http: HttpClient) { }

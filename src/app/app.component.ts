@@ -1,7 +1,7 @@
 // package from Angular core
 import { Component } from '@angular/core';
 
-// decrator with meta data for components
+// decorator with meta data for components
 
 @Component({
   // selector: will be used in HTML page, loaded; with generator CLI adds it for us
@@ -9,12 +9,13 @@ import { Component } from '@angular/core';
   // template to check and develop
   templateUrl: './app.component.html',
   // component style
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
 })
 // {{title}} dynamic content in template, in single element like div
 // check app.component.html for template
 export class AppComponent {
-/*  // exemple de Typescript; attributs
+}
+/*  // exemple de Typescript; attributs; à ajouter dans AppComponent pour tester liste données
   name: string = 'mon Projet';
   title: string = 'angular-crash-todolist';
   content: string = ' à compléter';
@@ -30,4 +31,4 @@ export class AppComponent {
   changeName(name: string): void {
     this.author = name;
   }*/
-}
+
