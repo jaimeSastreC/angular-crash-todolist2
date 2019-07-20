@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
 // decorator with meta data for components
 
 @Component({
-  // selector: will be used in HTML page, loaded; with generator CLI adds it for us
+  // selector: will be used in HTML page, loaded; with generator CLI adds it for us; ng g c mycomponent
   selector: 'app-root',
   // template to check and develop
   templateUrl: './app.component.html',
